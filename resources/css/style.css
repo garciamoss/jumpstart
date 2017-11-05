@@ -71,8 +71,34 @@ body {
   .navbar-default img {
     display: none;
   }
-  
 }
 
+
+/*Jumbotron*/
+.jumbotron {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 11.85rem;
+  margin-top: 3.57rem;
+  color: #ffffff; 
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.jumbotron h1 {
+  font-family: "Monoton", sans-serif;
+  font-size: 7.1rem;
+}
+
+.jumbotron p {
+  max-width: 51.3rem;
+  margin: 0 auto;
+}
+
+.jumbotron-bike {
+  background-image: url("../images/jumbotron-bike.jpg");
+}
 
 
