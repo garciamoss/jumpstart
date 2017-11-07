@@ -71,14 +71,17 @@ h4 {
   margin-top: 2.8rem;
   background-color: #399bd1;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  border: 0;
 }
 
 .btn:hover {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+  background-color: #399bd1;
 }
 
 .btn:active {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+  background-color: #399bd1;
 }
 /*End*/
 
@@ -117,15 +120,22 @@ h4 {
 
 /*Jumbotron*/
 .jumbotron {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 39.2rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
-  padding: 11.85rem;
   margin-top: 3.57rem;
   color: #ffffff; 
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.jumbotron .container-fluid {
+  text-align: center;
+  padding: 0;
 }
 
 .jumbotron h1 {
@@ -161,7 +171,7 @@ p {
 
 
 /*Projects*/
-.projects {
+.projects .col-md-4 {
   padding-bottom: 5.85rem;
   margin-top: 1.43rem;
 }
@@ -182,4 +192,27 @@ p {
   max-width: 42rem;
 }
 
+
+/*Media Queries*/
+@media only screen and (max-width: 768px){
+  .navbar-default img {
+    display: none;
+  }
+  
+  .jumbotron h1 {
+    font-size: 5.7rem;
+    margin-top: 4rem;
+  }
+  
+  .projects {
+    padding-bottom: 0;
+  }
+  
+  .projects .col-xs-12 {
+    padding-bottom: 2rem;
+  }
+  .help {
+    padding-top: 2.6rem;
+  }
+}
 
