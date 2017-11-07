@@ -29,7 +29,7 @@
 }
 
 
-//*Global Rules*/
+/*Global Rules*/
 html {
   font-size: 14px;
   line-height: 1.4;
@@ -38,9 +38,14 @@ html {
 body {
   background-color: white;
   font-family: "Open Sans", sans-serif;
-  padding: 5px 25px;
   margin: 0;
   color: #444;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 1.4rem;
 }
 
 h3 {
@@ -57,6 +62,23 @@ h4 {
 .image-container img{
   opacity: 0.7;
   width: 100%;
+}
+
+.btn {
+  text-shadow: none;
+  width: 11.4rem;
+  padding: 1.3rem 0;
+  margin-top: 2.8rem;
+  background-color: #399bd1;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+
+.btn:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
 }
 /*End*/
 
@@ -92,6 +114,7 @@ h4 {
 /*End*/
 
 
+
 /*Jumbotron*/
 .jumbotron {
   text-align: center;
@@ -119,23 +142,6 @@ h4 {
 .jumbotron-bike {
   background-image: url("../images/jumbotron-bike.jpg");
 }
-
-.jumbotron .btn {
-  text-shadow: none;
-  width: 11.4rem;
-  padding: 1.3rem 0;
-  margin-top: 2.8rem;
-  background-color: #399bd1;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-}
-
-.btn:hover {
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
-}
-
-.btn:active {
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
-}
 /*End*/
 
 
@@ -146,7 +152,7 @@ h4 {
 
 .featured h3 {
   padding-bottom: 1.4rem;
-}r
+}
 
 p {
   color: rgba(0, 0, 0, 0.7);
@@ -155,4 +161,25 @@ p {
 
 
 /*Projects*/
+.projects {
+  padding-bottom: 5.85rem;
+  margin-top: 1.43rem;
+}
+/*End*/
+
+
+/*Help*/
+.help {
+  text-align: center;
+  background-color: #f3f3f3;
+  padding-top: 5.2rem;
+  padding-bottom: 5.2rem;
+  width: auto;
+}
+
+.help p {
+  margin: 0 auto;
+  max-width: 42rem;
+}
+
 
