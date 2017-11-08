@@ -40,6 +40,7 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   color: #444;
+  line-height: 1.4;
 }
 
 h2 {
@@ -58,7 +59,7 @@ h4 {
   font-size: 1.3rem;
   font-weight: 700;
 }
-
+  
 .image-container {
   overflow: hidden;
 }
@@ -97,6 +98,9 @@ h4 {
 /*End*/
 
 
+
+/*More Specific Rules*/
+
 /*Navigation*/
 .navbar-default {
   background-color: #ffffff;
@@ -119,12 +123,6 @@ h4 {
 .navbar-default .navbar-nav li a:hover {
   color: #399bd1;
 }
-
-@media only screen and (max-width: 768px){
-  .navbar-default img {
-    display: none;
-  }
-}
 /*End*/
 
 
@@ -136,6 +134,8 @@ h4 {
   align-items: center;
   justify-content: center;
   height: 39.2rem;
+  padding-top: 11.85rem;
+  padding-bottom: 11.85rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -163,6 +163,28 @@ h4 {
 .jumbotron-bike {
   background-image: url("../images/jumbotron-bike.jpg");
 }
+
+.jumbotron-beer {
+  background-image: url("../images/jumbotron-beer.jpg");
+}
+
+.jumbotron-flowers {
+  background-image: url("../images/jumbotron-flowers.jpg");
+}
+
+.jumbotron-duffel {
+  background-image: url("../images/jumbotron-duffel.jpg");
+}
+
+.button-container {
+  width: 100%;
+  position: absolute;
+  top: 32.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+
 /*End*/
 
 
@@ -175,17 +197,22 @@ h4 {
   padding-bottom: 1.4rem;
 }
 
-p {
+.featured p {
   color: rgba(0, 0, 0, 0.7);
+}
+
+.featured li {
+  line-height: 1.4;
 }
 /*End*/
 
 
 /*Projects*/
-.projects .col-md-4 {
+.projects {
   padding-bottom: 5.85rem;
   margin-top: 1.43rem;
 }
+
 /*End*/
 
 
@@ -205,23 +232,36 @@ p {
 
 
 /*Media Queries*/
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 480px){
   .navbar-default img {
     display: none;
   }
-  
+
+  .jumbotron {
+    padding-top: 6.5rem;
+  }
+
   .jumbotron h1 {
-    font-size: 5.7rem;
+    font-size: 3.5rem;
     margin-top: 4rem;
   }
+
+  .jumbotron p {
+    font-size: 1.5rem;
+  }  
   
+  .btn {
+    padding: .5rem 0;
+  }
+
   .projects {
     padding-bottom: 0;
   }
-  
+
   .projects .col-xs-12 {
     padding-bottom: 2rem;
   }
+
   .help {
     padding-top: 2.6rem;
   }
